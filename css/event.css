@@ -1,0 +1,93 @@
+/**
+ * file: css/event.css
+ * purpose: styling
+ **/
+
+/* Define variables in the :root */
+:root {
+    --contrast: rgb(229, 229, 229);
+    --backgr: #000;
+  }
+  
+  /* Baggrundsbillede */
+  html, body {
+    height: 100%; /* Sørger for, at body og html strækker sig til hele vinduets højde */
+    margin: 0; /* Fjerner margin for at undgå mellemrum omkring siden */
+  }
+  
+  body {
+    background-image: url("../images/background1.png");
+    background-size: cover; /* Strækker billedet til at dække hele skærmen */
+    background-repeat: no-repeat; /* Undgår gentagelse af billedet */
+    background-position: center; /* Centrerer billedet */
+    background-attachment: fixed; /* Baggrunden følger ikke med, når man scroller */
+    background-color: transparent; /* Fallback-farve kan fjernes eller sættes til gennemsigtig */
+  }
+  
+  /* Styling for main content */
+  main {
+    color: var(--contrast);
+    background-color: transparent; /* Sørger for, at baggrunden er gennemsigtig */
+    z-index: 1; /* Sørger for, at main-indholdet vises foran baggrundsbilledet */
+    position: relative; /* Bevarer sin position i layoutet */
+  }
+  
+  /* Styling for logo */
+  .logo {
+    width: 200px;
+    margin-top: 20px; /* Tilføjer ekstra mellemrum over logoet */
+    margin-left: 20px; /* Tilføjer mellemrum fra venstre */
+  }
+  
+  /* Dropdown Menu knap */
+  .menu {
+    position: absolute;   /* Brug absolute positioning */
+    top: 20px;            /* Juster højden af menuen */
+    right: 20px;          /* Placerer menuen i højre hjørne */
+    z-index: 1000;        /* Sørger for, at menuen er synlig over baggrunden */
+  }
+  
+  .menu-btn {
+    font-size: 100px;   /* Dobbelt så stor skriftstørrelse */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 20px 40px;  /* Dobbelt så stor padding for større knap */
+    margin-right: 0;
+    margin-top: -40px; /* Flytter knappen op med 40px */
+    position: relative;
+    z-index: 1001;
+  }
+  
+  /* Dropdown menu */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 50px;  /* Placerer dropdown-menuen under knappen */
+    right: 100%; /* Placerer dropdown-menuen til venstre for knappen */
+    background-color: var(--baggrundsfarve);
+    border: 2px solid #fffbfb;
+    padding: 10px;
+    width: 180px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+  }
+  
+  .dropdown-content a {
+    display: block;
+    color: #ffffff;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #d3bcb0;
+  }
+  
+  /* Når musen er over menuen, vis dropdown */
+  .menu:hover .dropdown-content {
+    display: block;
+  }
