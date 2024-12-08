@@ -142,3 +142,16 @@ main {
   text-decoration: none;
   border-radius: 5px;
 }
+
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+footer .footer-content p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
