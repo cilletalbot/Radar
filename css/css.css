@@ -89,9 +89,13 @@
 }
 
 
+/*Forside billede*/
+
 .hero-billede {
-  max-width: 80%; /* Begrænser billedets bredde til 80% af containerens bredde */
+  max-width: 50%; /* Begrænser billedets bredde til 60% af containerens bredde */
   height: auto; /* Bevarer billedets proportioner */
   display: block;
   margin: 50px auto; /* Centrerer billedet og giver 50px margin både øverst og nederst */
 }
+
+
