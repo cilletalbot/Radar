@@ -35,4 +35,55 @@
     margin-left: 20px; /* Tilføjer mellemrum fra venstre */
   }
   
+/* Dropdown Menu knap */
+.menu {
+    position: absolute;   /* Brug absolute positioning */
+    top: 20px;            /* Juster højden af menuen */
+    right: 20px;          /* Placerer menuen i højre hjørne */
+    z-index: 1000;
+}
 
+.menu-btn {
+    font-size: 100px;   /* Dobbelt så stor skriftstørrelse */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 20px 40px;  /* Dobbelt så stor padding for større knap */
+    margin-right: 0;
+    margin-top: -40px; /* Flytter knappen op med 20px */
+    position: relative;
+    z-index: 1001;
+}
+
+/* Dropdown menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 50px;  /* Placerer dropdown-menuen under knappen */
+    right: 100%; /* Placerer dropdown-menuen til venstre for knappen */
+    background-color: var(--baggrundsfarve);
+    border: 2px solid #fffbfb;
+    padding: 10px;
+    width: 180px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.dropdown-content a {
+    display: block;
+    color: #ffffff;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #d3bcb0;
+}
+
+/* Når musen er over menuen, vis dropdown */
+.menu:hover .dropdown-content {
+    display: block;
+}
