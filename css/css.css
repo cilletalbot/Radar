@@ -5,7 +5,7 @@
 
 /* Define variables in the :root */
  :root {
-   --contrast: lime;
+   --contrast: rgb(229, 229, 229);
    --backgr: #000;
  }
 
@@ -89,15 +89,12 @@
 }
 
 
-/* Hero Section */
-
-.hero-billede {
-    max-width: 100%; /* Gør billedet responsivt */
-    max-height: 500px; /* Øger højden på billedet */
+hero-billede {
+    max-width: 100%; /* Gør billedet responsivt og sørger for, at det ikke overskrider containerens bredde */
+    max-height: 400px; /* Begrænser højden på billedet */
     width: auto; /* Bevarer billedets proportioner */
     height: auto; /* Bevarer billedets proportioner */
     display: block;
     margin: 0 auto; /* Centrerer billedet */
     margin-top: 50px; /* Rykker billedet 50px ned fra toppen */
   }
-  
