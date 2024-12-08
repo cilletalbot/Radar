@@ -89,12 +89,9 @@
 }
 
 
-hero-billede {
-    max-width: 100%; /* Gør billedet responsivt og sørger for, at det ikke overskrider containerens bredde */
-    max-height: 400px; /* Begrænser højden på billedet */
-    width: auto; /* Bevarer billedets proportioner */
-    height: auto; /* Bevarer billedets proportioner */
-    display: block;
-    margin: 0 auto; /* Centrerer billedet */
-    margin-top: 50px; /* Rykker billedet 50px ned fra toppen */
-  }
+.hero-billede {
+  max-width: 80%; /* Begrænser billedets bredde til 80% af containerens bredde */
+  height: auto; /* Bevarer billedets proportioner */
+  display: block;
+  margin: 50px auto; /* Centrerer billedet og giver 50px margin både øverst og nederst */
+}
