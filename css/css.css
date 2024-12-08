@@ -87,3 +87,17 @@
 .menu:hover .dropdown-content {
     display: block;
 }
+
+
+/* Hero Section */
+
+.hero-billede {
+    max-width: 100%; /* Gør billedet responsivt */
+    max-height: 500px; /* Øger højden på billedet */
+    width: auto; /* Bevarer billedets proportioner */
+    height: auto; /* Bevarer billedets proportioner */
+    display: block;
+    margin: 0 auto; /* Centrerer billedet */
+    margin-top: 50px; /* Rykker billedet 50px ned fra toppen */
+  }
+  
