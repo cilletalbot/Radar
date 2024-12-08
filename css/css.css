@@ -14,3 +14,18 @@
    color: var(--contrast);
    background-color: var(--backgr);
  }
+
+
+
+ /* Baggrundsbillede*/
+ body {
+  background-image: url("../images/background1.png");
+  background-size: cover; /* Strækker billedet til at dække hele skærmen */
+  background-repeat: no-repeat; /* Undgår gentagelse af billedet */
+  background-position: center; /* Centrerer billedet */
+  height: 100vh; /* Gør body 100% af browserens højde */
+  margin: 0; /* Fjerner margin, så der ikke er tomme områder */
+  background-color: #000; /* Sort baggrundsfarve som fallback */
+}
+
+
