@@ -229,6 +229,68 @@ footer {
 
 /* Media query for iPhone 12 (390px bredde) */
 @media (max-width: 390px) {
+
+    .logo {
+      width: 110px; /* Mindre logo på mindre skærme */
+      margin-top: 10px; /* Reducerer mellemrum øverst */
+      margin-left: 10px; /* Reducerer venstre margin */
+      right: 40px;
+    }
+  
+    .menu-btn {
+      font-size: 70px; /* Øget størrelse på knappen */
+      padding: 20px 40px; /* Øget padding */
+      margin-top: -50px;  /* Flytter knappen lidt højere op */
+    }
+  
+    .dropdown-content {
+      top: 40px;  /* Mindre afstand fra knappen */
+      right: 0%;  /* Placerer dropdown-menuen til højre */
+      width: 150px;  /* Mindre bredde på dropdown-menuen */
+    }
+  
+    .dropdown-content a {
+      font-size: 16px; /* Mindre tekst i dropdown */
+      padding: 8px 0;  /* Mindre padding på links */
+    }
+
+    .hero-billede {
+      max-width: 80%; /* Gør billedet større på mindre skærme */
+      margin: 20px auto; /* Reducerer marginerne for at skabe mere plads */
+    }
+
+
+  /* Gør indholdet mindre på små skærme */
+  .content, .donation {
+    max-width: 100%; /* Fuld bredde for indholdet */
+    padding: 10px; /* Mindre padding for at spare plads */
+    
+  }
+
+  /* Justering af overskrifter */
+  .content h1, .donation h2 {
+    font-size: 24px; /* Mindre overskriftsstørrelse på små skærme */
+    margin-bottom: 8px;
+    margin-top: 20px;
+  }
+
+  /* Justering af brødtekst */
+  .content p, .donation p {
+    font-size: 1rem; /* Reducer font-størrelse for brødtekst */
+  }
+
+  /* CTA-knappen */
+  .donation .cta-button {
+    font-size: 16px; /* Mindre font-størrelse på CTA-knappen */
+    padding: 8px 16px; /* Mindre padding på CTA-knappen */
+  }
+
+
+
+
+
+
+
   footer {
     flex-direction: column;
     padding: 10px 20px; /* Mindre padding på mobil */
