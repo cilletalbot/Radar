@@ -94,6 +94,13 @@
 
 
 
+/* Infographic billede */
+.info-billede {
+  max-width: 50%; /* Begrænser billedets bredde til 50% af containerens bredde */
+  height: auto; /* Bevarer billedets proportioner */
+  display: block;
+  margin: 50px auto; /* Centrerer billedet og giver 50px margin både øverst og nederst */
+}
 
 
 
