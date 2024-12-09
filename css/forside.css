@@ -103,47 +103,58 @@ main {
 
 /* Main Content */
 
-.content {
-  padding: 20px;
-  text-align: center;
-}
-
-.content h1 {
-  font-size: 2.5rem;
+.content, .donation {
+  max-width: 800px; /* Begrænser bredden af indholdet til 800px */
+  margin: 10px auto; /* Tilføjer en mindre margin oven og neden */
+  text-align: center; /* Centrerer teksten */
+  padding: 20px; /* Tilføjer lidt afstand omkring teksten */
+  line-height: 1.8; /* Gør teksten endnu mere læsbar */
   font-family: Arial, Helvetica, sans-serif;
-  margin-bottom: 20px;
-  color: #fff;
 }
 
-.content p {
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
-/* Donation Section */
-.donation {
-  padding: 20px;
-  text-align: center;
-  
-}
-
-.donation h2 {
-  font-size: 2rem;
+/* Styling til overskrifter i .content og .donation */
+.content h1, .donation h2 {
+  font-size: 32px; /* Gør overskrifterne større */
+  margin-bottom: 10px; /* Tilføjer afstand under overskriften */
+  text-align: center; /* Centrerer overskrifterne */
+  margin-top: 10px;
   font-family: Arial, Helvetica, sans-serif;
-  margin-bottom: 20px;
-  color: #fff;
 }
 
-.cta-button {
+.content, .donation p {
+  font-size: 1.2rem; /* Gør teksten større (ca. 19px) */
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.8; /* Øger linjehøjden for bedre læsbarhed */
+}
+
+/* Justerer tekstens placering ved at flytte hele sektionen op */
+main {
+  margin-top: -50px; /* Trækker indholdet længere op på siden */
+}
+
+
+.donation .cta-button {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
-  font-size: 1.2rem;
-  color: #000;
-  background-color: rgb(255, 255, 255);
+  background-color: #FFFFFF; /* Hvid baggrund */
+  color: #4B0082; /* Mørk lilla tekst for at matche siden */
   text-decoration: none;
-  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  border: 2px solid #4B0082; /* Lilla kant for at matche teksten */
+  border-radius: 5px; /* Afrundede hjørner */
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Tilføjer en skygge for dybde */
 }
+
+.donation .cta-button:hover {
+  background-color: #4B0082; /* Mørk lilla baggrund ved hover */
+  color: #FFFFFF; /* Hvid tekst ved hover */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Glidende overgang */
+}
+
+
 
 
 /* Footer styling */
@@ -188,26 +199,29 @@ footer {
  }
  .nyhedsbrev {
   text-align: center;
- }
- .nyhedsbrev input[type="email"] {
+}
+
+.nyhedsbrev input[type="email"] {
   padding: 5px;
   margin-top: 5px;
   width: 80%;
   border: 1px solid #ffffff;
   border-radius: 5px;
   font-size: 0.9em;
- }
- .nyhedsbrev button {
-  background: none;
-  border: 1px solid #ffffff;
+}
+
+.nyhedsbrev button {
+  background-color: #6a33a8; /* Lilla baggrund */
+  color: #ffffff; /* Hvid tekst */
   padding: 5px 20px;
-  color: #ffffff;
+  border: 1px solid #ffffff;
   cursor: pointer;
   margin-top: 10px;
   border-radius: 5px;
-  transition: background-color 0.3s, color 0.3s;
- }
- .nyhedsbrev button:hover {
-  background-color: #fff9f9;
+  transition: background-color 0.3s, color 0.3s; /* Blød overgang for hover-effekten */
+}
+
+.nyhedsbrev button:hover {
+  background-color: #4b2480; /* Mørkere lilla ved hover */
   color: #fff;
- }
+}
