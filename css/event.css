@@ -102,10 +102,34 @@
   margin: 50px auto; /* Centrerer billedet og giver 50px margin både øverst og nederst */
 }
 
+.content {
+  max-width: 800px; /* Begrænser bredden af indholdet til 800px */
+  margin: 10px auto; /* Tilføjer en mindre margin oven og neden */
+  text-align: center; /* Centrerer teksten */
+  padding: 20px; /* Tilføjer lidt afstand omkring teksten */
+  line-height: 1.8; /* Gør teksten endnu mere læsbar */
+  font-family: Arial, Helvetica, sans-serif;
+}
 
+.container {
+  display: flex; /* Brug flexbox for at placere indholdet i en række */
+  align-items: center; /* Vertikal centering af indholdet */
+  justify-content: flex-start; /* Sørg for, at indholdet starter fra venstre */
+  gap: 20px; /* Skaber afstand mellem billede og tekst */
+}
 
+.sort-billede {
+  width: 200px; /* Øger størrelsen på billedet */
+  height: 200px; /* Øger størrelsen på billedet */
+  border-radius: 50%; /* Gør billedet rundt ved at sætte border-radius til 50% */
+  object-fit: contain; /* Gør så hele billedet kan ses uden at blive beskåret */
+}
 
-
+.text {
+  max-width: 55%; /* Teksten tager op til 55% af containerens bredde */
+  font-size: 1rem; /* Størrelse på teksten */
+  line-height: 1.5; /* Øger linjehøjden for bedre læsbarhed */
+}
 
 
 
