@@ -231,7 +231,7 @@ footer {
 @media (max-width: 390px) {
 
     .logo {
-      width: 110px; /* Mindre logo på mindre skærme */
+      width: 150px; /* Mindre logo på mindre skærme */
       margin-top: 10px; /* Reducerer mellemrum øverst */
       margin-left: 10px; /* Reducerer venstre margin */
       right: 40px;
@@ -241,6 +241,7 @@ footer {
       font-size: 70px; /* Øget størrelse på knappen */
       padding: 20px 40px; /* Øget padding */
       margin-top: -50px;  /* Flytter knappen lidt højere op */
+    
     }
   
     .dropdown-content {
@@ -284,12 +285,6 @@ footer {
     font-size: 16px; /* Mindre font-størrelse på CTA-knappen */
     padding: 8px 16px; /* Mindre padding på CTA-knappen */
   }
-
-
-
-
-
-
 
   footer {
     flex-direction: column;
