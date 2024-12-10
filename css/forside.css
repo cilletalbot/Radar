@@ -67,7 +67,7 @@ main {
   top: 50px;  /* Placerer dropdown-menuen under knappen */
   right: 100%; /* Placerer dropdown-menuen til venstre for knappen */
   background-color: var(--baggrundsfarve);
-  border: 2px solid #fffbfb;
+  border: 2px solid #4B0082;
   padding: 10px;
   width: 180px;
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
@@ -84,7 +84,7 @@ main {
 }
 
 .dropdown-content a:hover {
-  background-color: #d3bcb0;
+  background-color: #4B0082;
 }
 
 /* Når musen er over menuen, vis dropdown */
@@ -122,7 +122,7 @@ main {
 }
 
 .content, .donation p {
-  font-size: 1.2rem; /* Gør teksten større (ca. 19px) */
+  font-size: 16px; /* Gør teksten større (ca. 19px) */
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.8; /* Øger linjehøjden for bedre læsbarhed */
 }
