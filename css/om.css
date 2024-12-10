@@ -138,7 +138,32 @@
   }
 
 
-  /* Footer styling */
+  .gallery {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 kolonner */
+    gap: 15px; /* Mellemrum mellem billederne */
+    margin-top: 20px;
+  }
+  
+  .image-item img {
+    width: 100%; /* Gør billedet responsivt, fylder containerens bredde */
+    height: 200px; /* Sætter en fast højde på billederne */
+    object-fit: cover; /* Sørger for at billederne dækker området uden at blive forvrænget */
+    border-radius: 8px; /* Afrundede hjørner på billederne */
+  }
+  
+  
+
+
+
+
+/* Footer styling */
 footer {
     display: flex;
     justify-content: space-between;
