@@ -53,9 +53,9 @@
     border: none;
     cursor: pointer;
     color: #ffffff;
-    padding: 20px 40px;  /* Dobbelt så stor padding for større knap */
+    padding: 20px 40px;  
     margin-right: 0;
-    margin-top: -40px; /* Flytter knappen op med 40px */
+    margin-top: -40px; /* Flytter knappen op */
     position: relative;
     z-index: 1001;
   }
@@ -133,7 +133,58 @@
 
 
 
-  /* Footer styling */
+
+
+/* Event detaljer styling */
+.details {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.details h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.detail {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.detail img {
+  width: 200px; /* Øger bredden */
+  height: 200px; /* Øger højden */
+  border-radius: 50%; /* Beholder den runde form */
+  margin-right: 20px;
+  object-fit: cover; /* Sikrer, at hele billedet vises */
+}
+
+.detail .text p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.detail .text strong {
+  display: block;
+  margin-top: 10px;
+  color: #ffffff; /* Gul for at fremhæve billetpris */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+/* Footer styling */
 footer {
   display: flex;
   justify-content: space-between;
@@ -175,26 +226,30 @@ footer {
  }
  .nyhedsbrev {
   text-align: center;
- }
- .nyhedsbrev input[type="email"] {
+}
+
+.nyhedsbrev input[type="email"] {
   padding: 5px;
   margin-top: 5px;
   width: 80%;
   border: 1px solid #ffffff;
   border-radius: 5px;
   font-size: 0.9em;
- }
- .nyhedsbrev button {
-  background: none;
-  border: 1px solid #ffffff;
+}
+
+.nyhedsbrev button {
+  background-color: #6a33a8; /* Lilla baggrund */
+  color: #ffffff; /* Hvid tekst */
   padding: 5px 20px;
-  color: #ffffff;
+  border: 1px solid #ffffff;
   cursor: pointer;
   margin-top: 10px;
   border-radius: 5px;
-  transition: background-color 0.3s, color 0.3s;
- }
- .nyhedsbrev button:hover {
-  background-color: #fff9f9;
+  transition: background-color 0.3s, color 0.3s; /* Blød overgang for hover-effekten */
+}
+
+.nyhedsbrev button:hover {
+  background-color: #4b2480; /* Mørkere lilla ved hover */
   color: #fff;
- }
+}
+
