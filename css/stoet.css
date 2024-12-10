@@ -1,0 +1,176 @@
+/**
+ * file: css/stoet.css
+ * purpose: styling
+ **/
+
+/* Define variables in the :root */
+:root {
+    --contrast: rgb(229, 229, 229);
+    --backgr: #000;
+  }
+  
+  /* Baggrundsbillede */
+  html, body {
+    height: 100%; /* Sørger for, at body og html strækker sig til hele vinduets højde */
+    margin: 0; /* Fjerner margin for at undgå mellemrum omkring siden */
+  }
+  
+  body {
+    background-image: url("../images/background1.png");
+    background-size: cover; /* Strækker billedet til at dække hele skærmen */
+    background-repeat: no-repeat; /* Undgår gentagelse af billedet */
+    background-position: center; /* Centrerer billedet */
+    background-attachment: fixed; /* Baggrunden følger ikke med, når man scroller */
+    
+  }
+  
+  /* Styling for main content */
+  main {
+    color: var(--contrast);
+    background-color: transparent; /* Sørger for, at baggrunden er gennemsigtig */
+    z-index: 1; /* Sørger for, at main-indholdet vises foran baggrundsbilledet */
+    position: relative; /* Bevarer sin position i layoutet */
+  }
+  
+  /* Styling for logo */
+  .logo {
+    width: 200px;
+    margin-top: 20px; /* Tilføjer ekstra mellemrum over logoet */
+    margin-left: 20px; /* Tilføjer mellemrum fra venstre */
+    
+  }
+  
+  /* Dropdown Menu knap */
+  .menu {
+    position: absolute;   /* Brug absolute positioning */
+    top: 20px;            /* Juster højden af menuen */
+    right: 20px;          /* Placerer menuen i højre hjørne */
+    z-index: 1000;        /* Sørger for, at menuen er synlig over baggrunden */
+  }
+  
+  .menu-btn {
+    font-size: 100px;   
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 20px 40px;  
+    margin-right: 0;
+    margin-top: -40px; /* Flytter knappen op */
+    position: relative;
+    z-index: 1001;
+  }
+  
+  /* Dropdown menu */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 50px;  /* Placerer dropdown-menuen under knappen */
+    right: 100%; /* Placerer dropdown-menuen til venstre for knappen */
+    background-color: var(--baggrundsfarve);
+    border: 2px solid #fffbfb;
+    padding: 10px;
+    width: 180px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+  }
+  
+  .dropdown-content a {
+    display: block;
+    color: #ffffff;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #d3bcb0;
+  }
+  
+  /* Når musen er over menuen, vis dropdown */
+  .menu:hover .dropdown-content {
+    display: block;
+  }
+
+
+
+
+
+
+
+  
+
+
+
+  /* Footer styling */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+  
+    color: #ffffff;
+    font-size: 0.9em;
+    border-top: 1px solid #ffffff;
+   }
+   footer div {
+    flex: 1;
+    text-align: center;
+    line-height: 1.6;
+    margin: 0 10px;
+   }
+   .aabeningstider {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+   }
+   .aabeningstider p {
+    margin: 0;
+   }
+   .aabeningstider div {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    margin: 0 auto;
+   }
+   .aabeningstider .day {
+    text-align: left;
+    width: 50%;
+   }
+   .aabeningstider .time {
+    text-align: right;
+    width: 50%;
+   }
+   .nyhedsbrev {
+    text-align: center;
+  }
+  
+  .nyhedsbrev input[type="email"] {
+    padding: 5px;
+    margin-top: 5px;
+    width: 80%;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    font-size: 0.9em;
+  }
+  
+  .nyhedsbrev button {
+    background-color: #6a33a8; /* Lilla baggrund */
+    color: #ffffff; /* Hvid tekst */
+    padding: 5px 20px;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s; /* Blød overgang for hover-effekten */
+  }
+  
+  .nyhedsbrev button:hover {
+    background-color: #4b2480; /* Mørkere lilla ved hover */
+    color: #fff;
+  }
+  
+  
+  

@@ -37,6 +37,7 @@
     width: 200px;
     margin-top: 20px; /* Tilføjer ekstra mellemrum over logoet */
     margin-left: 20px; /* Tilføjer mellemrum fra venstre */
+    
   }
   
   /* Dropdown Menu knap */
@@ -235,7 +236,8 @@ footer {
     width: 150px; /* Mindre logo på mindre skærme */
     margin-top: 10px; /* Reducerer mellemrum øverst */
     margin-left: 10px; /* Reducerer venstre margin */
-    right: 40px;
+    
+    
   }
 
 /*Burgermenu responsiv*/
@@ -297,8 +299,7 @@ footer {
   }
 
 
-
-
+/* Responsiv footer*/
 
   footer {
     flex-direction: column;
