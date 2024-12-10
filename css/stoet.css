@@ -122,6 +122,8 @@
     font-family: Arial, Helvetica, sans-serif;
   }
   
+
+
   .cta-container {
     margin-top: 20px; /* Giver plads mellem teksten og knappen */
   }
@@ -137,10 +139,15 @@
     font-weight: bold;
     width: fit-content; /* Tilpasser bredden til indholdet */
 
-    
   }
 
+  .cta-button:hover {
+    background-color: #4B0082; /* Mørk lilla baggrund ved hover */
+    color: #FFFFFF; /* Hvid tekst ved hover */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Glidende overgang */
+  }
   
+
   .images {
     display: flex;
     justify-content: center;
@@ -162,8 +169,6 @@
   }
   
   
-
-
 
 
   /* Footer styling */
@@ -237,3 +242,117 @@ footer {
   
   
   
+
+  /* Media query for iPhone 12 (390px bredde) */
+@media (max-width: 390px) {
+
+
+  /* logo responsiv */
+  .logo {
+    width: 150px; /* Mindre logo på mindre skærme */
+    margin-top: 10px; /* Reducerer mellemrum øverst */
+    margin-left: 10px; /* Reducerer venstre margin */
+    
+    
+  }
+
+/*Burgermenu responsiv*/
+
+  .menu-btn {
+    font-size: 70px; /* Øget størrelse på knappen */
+    padding: 20px 40px; /* Øget padding */
+    margin-top: -50px;  /* Flytter knappen lidt højere op */
+  
+  }
+
+  .dropdown-content {
+    top: 40px;  /* Mindre afstand fra knappen */
+    right: 0%;  /* Placerer dropdown-menuen til højre */
+    width: 150px;  /* Mindre bredde på dropdown-menuen */
+  }
+
+  .dropdown-content a {
+    font-size: 16px; /* Mindre tekst i dropdown */
+    padding: 8px 0;  /* Mindre padding på links */
+  }
+
+
+
+ /* Justeringer for tekst og layout */
+ .support {
+  padding: 15px; /* Tilføjer lidt ekstra padding på små skærme */
+  margin-right: 40px;
+}
+
+.support h2 {
+  font-size: 18px; /* Reducerer overskriftens fontstørrelse */
+  margin-bottom: 10px; /* Mindre margin under overskriften */
+}
+
+.support li {
+  font-size: 15px; /* Mindre tekststørrelse for bedre tilpasning */
+  margin-bottom: 15px; /* Mindre afstand mellem listepunkter */
+}
+
+.cta-button {
+  font-size: 14px; /* Mindre tekststørrelse på knappen */
+  padding: 8px 12px; /* Reducerer padding på knappen */
+  width: 100%; /* Gør knappen bred nok til at fylde hele containeren */
+  text-align: center; /* Centrerer teksten i knappen */
+  margin-right: 80px;
+}
+
+.images {
+  gap: 5px; /* Mindre afstand mellem billeder på små skærme */
+  flex-wrap: wrap; /* Gør det muligt for billeder at bryde linjen ved behov */
+  justify-content: center; /* Centrerer billederne */
+}
+
+.images img {
+  max-width: 100%; /* Gør billederne responsiv, fylder 100% af containerens bredde */
+  height: auto; /* Bevarer billedets proportioner */
+}
+
+
+
+  
+  /* Responsiv footer*/
+
+  footer {
+    flex-direction: column;
+    padding: 10px 20px; /* Mindre padding på mobil */
+    margin-right: 30px;
+  }
+
+  .aabeningstider div {
+    width: 100%; /* Gør div'ene i aabeningstider til 100% bredde */
+    flex-direction: column; /* Stak items vertikalt */
+    margin-bottom: 10px; /* Tilføj lidt afstand mellem elementerne */
+  }
+
+  .aabeningstider .day,
+  .aabeningstider .time {
+    width: 100%; /* Hver item tager 100% bredde */
+    text-align: left; /* Juster tekst til venstre for bedre læsbarhed */
+  }
+
+  .nyhedsbrev input[type="email"] {
+    width: 100%; /* Gør input-feltet til 100% bredde på mobil */
+    margin-top: 10px;
+  }
+
+  .nyhedsbrev button {
+    width: 100%; /* Gør knappen til 100% bredde på mobil */
+    padding: 10px 0; /* Øg padding på knappen for bedre touch-interaktion */
+  }
+
+  /* Juster footer tekstplacering for små skærme */
+  footer div {
+    text-align: center;
+    margin-bottom: 15px; /* Tilføj margin mellem footer elementer */
+  }
+
+
+
+
+}
