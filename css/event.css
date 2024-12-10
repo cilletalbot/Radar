@@ -21,7 +21,7 @@
     background-repeat: no-repeat; /* Undgår gentagelse af billedet */
     background-position: center; /* Centrerer billedet */
     background-attachment: fixed; /* Baggrunden følger ikke med, når man scroller */
-    background-color: transparent; /* Fallback-farve kan fjernes eller sættes til gennemsigtig */
+    
   }
   
   /* Styling for main content */
@@ -48,7 +48,7 @@
   }
   
   .menu-btn {
-    font-size: 100px;   /* Dobbelt så stor skriftstørrelse */
+    font-size: 100px;   
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -102,36 +102,6 @@
   margin: 50px auto; /* Centrerer billedet og giver 50px margin både øverst og nederst */
 }
 
-.content {
-  max-width: 800px; /* Begrænser bredden af indholdet til 800px */
-  margin: 10px auto; /* Tilføjer en mindre margin oven og neden */
-  text-align: center; /* Centrerer teksten */
-  padding: 20px; /* Tilføjer lidt afstand omkring teksten */
-  line-height: 1.8; /* Gør teksten endnu mere læsbar */
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.container {
-  display: flex; /* Brug flexbox for at placere indholdet i en række */
-  align-items: center; /* Vertikal centering af indholdet */
-  justify-content: flex-start; /* Sørg for, at indholdet starter fra venstre */
-  gap: 20px; /* Skaber afstand mellem billede og tekst */
-}
-
-.sort-billede {
-  width: 200px; /* Øger størrelsen på billedet */
-  height: 200px; /* Øger størrelsen på billedet */
-  border-radius: 50%; /* Gør billedet rundt ved at sætte border-radius til 50% */
-  object-fit: contain; /* Gør så hele billedet kan ses uden at blive beskåret */
-}
-
-.text {
-  max-width: 55%; /* Teksten tager op til 55% af containerens bredde */
-  font-size: 1rem; /* Størrelse på teksten */
-  line-height: 1.5; /* Øger linjehøjden for bedre læsbarhed */
-}
-
-
 
 
 
@@ -142,7 +112,7 @@
   margin: 0 auto;
 }
 
-.details h2 {
+.details h1 {
   text-align: center;
   margin-bottom: 20px;
   font-size: 30px;
@@ -253,3 +223,114 @@ footer {
   color: #fff;
 }
 
+
+
+
+/* Media query for iPhone 12 (390px bredde) */
+@media (max-width: 390px) {
+
+
+  /* logo responsiv */
+  .logo {
+    width: 150px; /* Mindre logo på mindre skærme */
+    margin-top: 10px; /* Reducerer mellemrum øverst */
+    margin-left: 10px; /* Reducerer venstre margin */
+    right: 40px;
+  }
+
+/*Burgermenu responsiv*/
+
+  .menu-btn {
+    font-size: 70px; /* Øget størrelse på knappen */
+    padding: 20px 40px; /* Øget padding */
+    margin-top: -50px;  /* Flytter knappen lidt højere op */
+  
+  }
+
+  .dropdown-content {
+    top: 40px;  /* Mindre afstand fra knappen */
+    right: 0%;  /* Placerer dropdown-menuen til højre */
+    width: 150px;  /* Mindre bredde på dropdown-menuen */
+  }
+
+  .dropdown-content a {
+    font-size: 16px; /* Mindre tekst i dropdown */
+    padding: 8px 0;  /* Mindre padding på links */
+  }
+
+
+/* Infographic */
+
+  .info-billede {
+    max-width: 80%; /* Gør billedet bredere for bedre synlighed */
+    margin: 30px auto; /* Reducerer margin for mere plads */
+  
+  }
+
+/* Event detaljer */
+
+  .details {
+    padding: 10px;
+    max-width: 100%; /* Fylder hele skærmen */
+  }
+
+  .details h1 {
+    font-size: 20px; /* Reducerer størrelsen på overskriften */
+  }
+
+  .detail {
+    flex-direction: column; /* Stabler billede og tekst vertikalt */
+    text-align: center; /* Centrerer teksten */
+    padding: 15px;
+  }
+
+  .detail img {
+    width: 150px; /* Mindre billede */
+    height: 150px; 
+    margin: 0 auto 15px; /* Centrerer billedet og tilføjer bundmargin */
+  }
+
+  .detail .text p {
+    font-size: 10px; /* Mindre tekst */
+    line-height: 1.4; /* Reduceret linjeafstand */
+    margin: 0 10px; /* Tilføjer margin til venstre og højre for at holde teksten inden for skærmen */
+  }
+
+
+
+
+
+  footer {
+    flex-direction: column;
+    padding: 10px 20px; /* Mindre padding på mobil */
+    margin-right: 30px;
+  }
+
+  .aabeningstider div {
+    width: 100%; /* Gør div'ene i aabeningstider til 100% bredde */
+    flex-direction: column; /* Stak items vertikalt */
+    margin-bottom: 10px; /* Tilføj lidt afstand mellem elementerne */
+  }
+
+  .aabeningstider .day,
+  .aabeningstider .time {
+    width: 100%; /* Hver item tager 100% bredde */
+    text-align: left; /* Juster tekst til venstre for bedre læsbarhed */
+  }
+
+  .nyhedsbrev input[type="email"] {
+    width: 100%; /* Gør input-feltet til 100% bredde på mobil */
+    margin-top: 10px;
+  }
+
+  .nyhedsbrev button {
+    width: 100%; /* Gør knappen til 100% bredde på mobil */
+    padding: 10px 0; /* Øg padding på knappen for bedre touch-interaktion */
+  }
+
+  /* Juster footer tekstplacering for små skærme */
+  footer div {
+    text-align: center;
+    margin-bottom: 15px; /* Tilføj margin mellem footer elementer */
+  }
+}
