@@ -94,12 +94,75 @@
   }
 
 
+  .content {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .intro, .support, .stottere {
+    max-width: 800px; /* Begrænser tekstens bredde */
+    margin: 0 auto; /* Centrerer teksten */
+  }
+  
+  .intro h1, .support h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
 
+  .stottere h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .intro p, .support ul, .support li, .stottere {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .cta-container {
+    margin-top: 20px; /* Giver plads mellem teksten og knappen */
+  }
+  
+  .cta-button {
+    display: block; /* Sikrer, at knappen placeres på en ny linje */
+    margin: 10px auto; /* Centrerer knappen */
+    padding: 10px 20px;
+    color: #4B0082;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    width: fit-content; /* Tilpasser bredden til indholdet */
 
-
-
+    
+  }
 
   
+  .images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .images img {
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .images img:hover {
+    transform: scale(1.05); /* Laver en zoom-effekt ved hover */
+  }
+  
+  
+
 
 
 
