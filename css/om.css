@@ -94,16 +94,49 @@
 
 
 
+  .content {
+    max-width: 800px; /* Begrænser bredden af indholdet til 800px */
+    margin: 10px auto; /* Tilføjer en mindre margin oven og neden */
+    text-align: center; /* Centrerer teksten */
+    padding: 20px; /* Tilføjer lidt afstand omkring teksten */
+    line-height: 1.8; /* Gør teksten endnu mere læsbar */
+    font-family: Arial, Helvetica, sans-serif;
+  }
 
 
+  .content h1 {
+    font-size: 32px; /* Gør overskrifterne større */
+    margin-bottom: 10px; /* Tilføjer afstand under overskriften */
+    text-align: center; /* Centrerer overskrifterne */
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-
-
-
-
-
-
+.content h1 {
+    font-size: 32px; /* Gør overskrifterne større */
+    margin-bottom: 10px; /* Tilføjer afstand under overskriften */
+    text-align: center; /* Centrerer overskrifterne */
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
   
+  .vision ul {
+    list-style-position: inside; /* Gør så prikkerne er lige ud for teksten */
+    padding-left: 0; /* Fjerner venstre indrykning */
+  }
+  
+  .vision li {
+    font-size: 16px; /* Tilpasser tekststørrelse, hvis nødvendigt */
+    line-height: 1.5; /* Giver lidt afstand mellem linjerne */
+  }
+  
+
+  .afrunding {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-top: 50px;
+  }
+
 
   /* Footer styling */
 footer {
